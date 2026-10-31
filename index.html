@@ -3,150 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KSR AI LABS - We Build AI & Digital Products</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>KSR AI LABS - Tool Kit + Surveys</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Space Grotesk',sans-serif;background:#0a0a0a;color:#fff;line-height:1.6}
-.top-bar{background:#1a1a1a;text-align:center;padding:8px;font-size:12px;letter-spacing:2px;color:#888}
-.top-bar span{color:#a855f7}
-.hero{display:flex;min-height:80vh;padding:60px 5%;gap:40px;align-items:center;max-width:1400px;margin:auto}
+body{font-family:'Space Grotesk',sans-serif;background:#0a0a0f;color:#fff}
+.top{background:#111;padding:8px;text-align:center;font-size:11px;letter-spacing:2px;color:#888}
+.top span{color:#a855f7}
+.hero{display:flex;padding:50px 5%;gap:30px;max-width:1300px;margin:auto;align-items:center}
 .hero-left{flex:1}
-.hero-right{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.badge{display:inline-block;background:#1a1a1a;border:1px solid #333;padding:6px 12px;border-radius:20px;font-size:11px;margin-bottom:20px}
-h1{font-size:48px;line-height:1.1;margin-bottom:20px;font-weight:700}
-h1 .purple{color:#a855f7}
-.hero p{color:#999;font-size:16px;margin-bottom:30px;max-width:500px}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn-primary{background:#a855f7;color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block}
-.btn-secondary{border:1px solid #333;color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;display:inline-block}
-.card{background:#111;border:1px solid #222;border-radius:12px;padding:20px;cursor:pointer;transition:0.3s}
-.card:hover{border-color:#a855f7;transform:translateY(-3px)}
-.card h3{font-size:16px;margin-bottom:8px}
-.card p{font-size:13px;color:#888}
-.stat{display:flex;gap:30px;margin-top:30px}
-.stat div strong{font-size:28px;display:block}
-.stat div span{font-size:12px;color:#666}
-.section{padding:60px 5%;max-width:1400px;margin:auto}
-.section h2{font-size:32px;margin-bottom:30px}
-.free-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.free-card{background:#111;border:1px solid #222;padding:20px;border-radius:12px;transition:0.3s}
-.free-card:hover{border-color:#a855f7}
-.free-card a{color:#a855f7;text-decoration:none;font-weight:600}
-.free-card h4{margin-bottom:8px}
-.free-card p{font-size:13px;color:#888;margin-bottom:8px}
-.contact-box{background:#111;border:1px solid #222;border-radius:20px;padding:30px;max-width:700px;margin:auto}
-.contact-box h3{font-size:26px;margin-bottom:10px}
-.contact-box p{color:#888;font-size:14px;margin-bottom:20px}
-.input-row{display:flex;gap:12px;margin-bottom:12px}
-.input-row input{flex:1;background:#0a0a0a;border:1px solid #222;border-radius:12px;padding:16px;color:#fff;outline:none}
-.full-input{background:#0a0a0a;border:1px solid #222;border-radius:12px;padding:16px;color:#fff;width:100%;height:120px;outline:none;resize:none;margin-bottom:16px;font-family:inherit}
-.send-btn{background:linear-gradient(90deg,#a855f7,#6366f1);color:#fff;border:none;padding:16px;border-radius:50px;width:100%;font-weight:600;font-size:16px;cursor:pointer}
-.footer{background:#0a0a0a;padding:60px 5%;border-top:1px solid #222;margin-top:60px}
-.footer-top{display:flex;gap:12px;align-items:center;margin-bottom:20px}
-.footer-top .k-icon{background:#6366f1;width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700}
-.footer p{color:#666;font-size:14px;margin-bottom:16px}
-.footer-links{display:flex;gap:30px;flex-wrap:wrap;color:#555;font-size:14px}
-.chatbot{position:fixed;bottom:20px;right:20px;background:#a855f7;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:24px;box-shadow:0 4px 20px rgba(168,85,247,0.4);z-index:999}
-.chat-window{position:fixed;bottom:90px;right:20px;width:320px;background:#111;border:1px solid #222;border-radius:16px;padding:16px;display:none;z-index:999}
-.chat-window.active{display:block}
-@media(max-width:900px){.hero{flex-direction:column}h1{font-size:32px}.input-row{flex-direction:column}}
+.badge{background:#1a1a1a;border:1px solid #333;padding:6px 12px;border-radius:20px;font-size:11px;display:inline-block;margin-bottom:20px}
+h1{font-size:42px;line-height:1.1;font-weight:700;margin-bottom:16px}
+h1 .p{color:#a855f7}
+.hero-left p{color:#888;margin-bottom:24px}
+.btns{display:flex;gap:12px}
+.btn1{background:#fff;color:#000;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600}
+.btn2{border:1px solid #333;padding:12px 24px;border-radius:8px;text-decoration:none;color:#fff}
+.hero-right{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{background:#15151f;border:1px solid #222;border-radius:12px;padding:18px;cursor:pointer}
+.card h3{font-size:15px;margin-bottom:6px}
+.card p{font-size:12px;color:#888}
+.section{padding:50px 5%;max-width:1300px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.tool{background:#111;border:1px solid #222;border-radius:14px;padding:22px}
+.tool h4{margin-bottom:8px;font-size:18px}
+.tool p{color:#888;font-size:13px;margin-bottom:12px}
+.tool a{color:#a855f7;text-decoration:none;font-weight:600;font-size:13px}
+.tag{display:inline-block;background:#1e1e2e;color:#a78bfa;font-size:10px;padding:4px 8px;border-radius:4px;margin-bottom:8px}
+.survey{background:#111;border:1px solid #222;border-radius:14px;padding:22px}
+.survey h4{margin-bottom:6px}
+.survey p{color:#888;font-size:13px;margin-bottom:10px}
+.contact{background:#111;border:1px solid #222;border-radius:20px;padding:30px;max-width:700px;margin:40px auto}
+.contact h3{font-size:24px;margin-bottom:8px}
+.contact p{color:#888;font-size:13px;margin-bottom:16px}
+.row{display:flex;gap:10px;margin-bottom:10px}
+.row input{flex:1;background:#0a0a0f;border:1px solid #222;padding:14px;border-radius:10px;color:#fff}
+textarea{background:#0a0a0f;border:1px solid #222;padding:14px;border-radius:10px;color:#fff;width:100%;height:100px;margin-bottom:12px;font-family:inherit}
+.send{background:linear-gradient(90deg,#a855f7,#6366f1);border:none;color:#fff;padding:14px;border-radius:30px;width:100%;font-weight:600;cursor:pointer}
+@media(max-width:800px){.hero{flex-direction:column}h1{font-size:32px}}
 </style>
 </head>
 <body>
-<div class="top-bar">REMOTE - <span>INDIA</span>, SERVING GLOBALLY - BUILD IN 7 DAYS</div>
-
+<div class="top">REMOTE - <span>INDIA</span>, SERVING GLOBALLY - BUILD IN 7 DAYS</div>
 <div class="hero">
 <div class="hero-left">
 <div class="badge">● LIVE • AVAILABLE FOR NEW PROJECTS</div>
-<h1>We Build <span class="purple">AI</span> & Digital Products That <span class="purple">Grow</span> Your Business</h1>
-<p>Have an idea? We build it. Plus ready-made tools to start earning today. From custom AI automation to FinTech tools - shipped in 7 days.</p>
-<div class="btns">
-<a href="#contact" class="btn-primary">Start Your Project →</a>
-<a href="#free" class="btn-secondary">Explore Products</a>
-</div>
-<div class="stat">
-<div><strong>9</strong><span>Days Avg Build</span></div>
-<div><strong>4</strong><span>Live Products</span></div>
-<div><strong>2h</strong><span>Reply Time</span></div>
-</div>
+<h1>We Build <span class="p">AI</span> & Digital Products That <span class="p">Grow</span> Your Business</h1>
+<p>Have an idea? We build it. Plus ready-made tools to start earning today.</p>
+<div class="btns"><a href="#contact" class="btn1">Start Your Project →</a><a href="#products" class="btn2">Explore Products</a></div>
 </div>
 <div class="hero-right">
-<div class="card" onclick="goContact('Custom AI & Automation chatbot/voice AI')"><h3>🤖 Custom AI & Automation</h3><p>Chatbots, voice AI, workflow automation - Click to start</p></div>
-<div class="card" onclick="goContact('FinTech Tool GST/invoice/payment')"><h3>💳 FinTech Tools</h3><p>GST, invoice, payment tools - Click to start</p></div>
-<div class="card" onclick="goContact('EdTech & Voice Learning platform with AI voice')"><h3>🎓 EdTech & Voice</h3><p>Learning platforms with AI voice - Click to start</p></div>
-<div class="card" onclick="goContact('Full product build - Launch in 7 Days')"><h3>🚀 Launch in 7 Days</h3><p>From idea to live product - Click to start</p></div>
+<div class="card" onclick="location.href='#contact'"><h3>🤖 Custom AI & Automation</h3><p>Chatbots, Workflows - Ship in 7-14 days - CLICK</p></div>
+<div class="card" onclick="location.href='#contact'"><h3>💳 FinTech Tools</h3><p>Finance tools kit - 1000 products live - CLICK</p></div>
+<div class="card" onclick="location.href='#contact'"><h3>🎓 EdTech & Voice</h3><p>Learn Stacks & Voice - Flagship ready - CLICK</p></div>
+<div class="card" onclick="location.href='#contact'"><h3>🚀 Launch in 7 Days</h3><p>From idea to live product - CLICK</p></div>
 </div>
 </div>
 
-<div class="section" id="free">
-<h2>🎁 FREE Earning Links - Start Today</h2>
-<div class="free-grid">
-<div class="free-card"><h4>💰 Prime Opinion</h4><p>High-paying surveys, instant PayPal. Earn $5-10 daily</p><a href="https://primeopinion.com" target="_blank">Join Prime Opinion →</a></div>
-<div class="free-card"><h4>⭐ GrabPoints.com</h4><p>Watch videos, surveys, tasks - redeem gift cards & cash</p><a href="https://grabpoints.com" target="_blank">Join GrabPoints →</a></div>
-<div class="free-card"><h4>📝 Swagbucks</h4><p>Surveys, shopping cashback, daily rewards</p><a href="https://swagbucks.com" target="_blank">Join Swagbucks →</a></div>
-<div class="free-card"><h4>💵 ySense</h4><p>Paid surveys & offers, trusted since 2007</p><a href="https://ysense.com" target="_blank">Join ySense →</a></div>
-<div class="free-card"><h4>🎯 Toluna</h4><p>Influencer surveys & product testing</p><a href="https://toluna.com" target="_blank">Join Toluna →</a></div>
-<div class="free-card"><h4>🔥 TimeBucks</h4><p>Micro tasks, TikTok follow, survey earning</p><a href="https://timebucks.com" target="_blank">Join TimeBucks →</a></div>
+<div class="section" id="products">
+<h2>🧰 Tool Kit - Ready Products</h2>
+<p style="color:#666;margin-bottom:20px;font-size:14px">Ready-made finance tools</p>
+<div class="grid">
+<div class="tool" id="ksr-invoice"><span class="tag">FINTECH • POPULAR</span><h4>🧾 KSR Invoice Kit</h4><p>GST-ready invoices, automatic HSN codes, professional templates for Indian businesses. Generate invoices in 30 seconds.</p><a href="#contact">Use KSR Invoice Kit →</a></div>
+<div class="tool"><span class="tag">TOOL KIT</span><h4>📊 Finance Tracker</h4><p>Personal + business expense tracker with AI insights.</p><a href="#contact">Use Finance Tracker →</a></div>
+<div class="tool"><span class="tag">TOOL KIT</span><h4>🔢 GST Calculator</h4><p>Instant GST calculation with breakdowns for all slabs.</p><a href="#contact">Use GST Calculator →</a></div>
+<div class="tool"><span class="tag">TOOL KIT</span><h4>💼 Freelancer Suite</h4><p>Invoice + Payment + Client management in one tool.</p><a href="#contact">Use Freelancer Suite →</a></div>
+</div>
+</div>
+
+<div class="section" id="surveys">
+<h2>💰 Surveys - FREE Earning Links</h2>
+<p style="color:#666;margin-bottom:20px;font-size:14px">Start earning today</p>
+<div class="grid">
+<div class="survey"><h4>💰 Prime Opinion</h4><p>High-paying surveys, instant PayPal. Earn $5-10 daily</p><a href="https://primeopinion.com" target="_blank" style="color:#a855f7;text-decoration:none;font-weight:600">Join Prime Opinion →</a></div>
+<div class="survey"><h4>⭐ GrabPoints.com</h4><p>Watch videos, surveys, tasks - redeem gift cards & cash</p><a href="https://grabpoints.com" target="_blank" style="color:#a855f7;text-decoration:none;font-weight:600">Join GrabPoints →</a></div>
+<div class="survey"><h4>📝 Swagbucks</h4><p>Surveys, shopping cashback, daily rewards</p><a href="https://swagbucks.com" target="_blank" style="color:#a855f7;text-decoration:none;font-weight:600">Join Swagbucks →</a></div>
+<div class="survey"><h4>💵 ySense</h4><p>Paid surveys & offers - trusted since 2007</p><a href="https://ysense.com" target="_blank" style="color:#a855f7;text-decoration:none;font-weight:600">Join ySense →</a></div>
+<div class="survey"><h4>🎯 Toluna</h4><p>Influencer surveys & product testing</p><a href="https://toluna.com" target="_blank" style="color:#a855f7;text-decoration:none;font-weight:600">Join Toluna →</a></div>
+<div class="survey"><h4>🔥 TimeBucks</h4><p>Micro tasks, TikTok follow, survey earning</p><a href="https://timebucks.com" target="_blank" style="color:#a855f7;text-decoration:none;font-weight:600">Join TimeBucks →</a></div>
 </div>
 </div>
 
 <div class="section" id="contact">
-<div class="contact-box">
+<div class="contact">
 <h3>Contact — Start your project</h3>
 <p>Tell us idea + budget. We reply in 2h, IST 10am-7pm.</p>
-<div class="input-row">
-<input type="text" placeholder="Name" id="name">
-<input type="text" placeholder="WhatsApp / Email" id="email">
-</div>
-<textarea class="full-input" placeholder="Idea + budget (e.g., AI finance tracker for freelancers, 15k budget)" id="idea"></textarea>
-<button class="send-btn" onclick="sendWA()">Send Message →</button>
-<p id="status" style="text-align:center;margin-top:12px;color:#a855f7;font-size:13px"></p>
-</div>
-</div>
-
-<div class="footer">
-<div class="footer-top"><div class="k-icon">K</div><strong>KSR AI LABS</strong><span style="color:#555;margin-left:10px">© 2026</span></div>
-<p>India • Remote - Serving Globally • Build in public, ship fast.</p>
-<div class="footer-links">
-<span>India, Remote</span>
-<span>hello@ksrailabs.in</span>
-<span onclick="openChat()" style="cursor:pointer;color:#a855f7">WhatsApp</span>
-<span>GitHub</span>
-<span>YouTube</span>
-</div>
-</div>
-
-<div class="chatbot" onclick="openChat()">💬</div>
-<div class="chat-window" id="chatWindow">
-<h4 style="margin-bottom:10px">KSR AI Assistant</h4>
-<p style="font-size:13px;color:#888;margin-bottom:12px">Hi! I build AI & FinTech tools. What do you want to build?</p>
-<div style="display:flex;flex-direction:column;gap:8px">
-<button onclick="goContact('I want Custom AI Chatbot')" style="background:#1a1a1a;border:1px solid #222;color:#fff;padding:8px;border-radius:8px;cursor:pointer;text-align:left">🤖 Custom AI Chatbot</button>
-<button onclick="goContact('I want FinTech Tool')" style="background:#1a1a1a;border:1px solid #222;color:#fff;padding:8px;border-radius:8px;cursor:pointer;text-align:left">💳 FinTech Tool</button>
-<button onclick="goContact('I want EdTech Platform')" style="background:#1a1a1a;border:1px solid #222;color:#fff;padding:8px;border-radius:8px;cursor:pointer;text-align:left">🎓 EdTech Platform</button>
-<button onclick="window.open('https://wa.me/919999999999','_blank')" style="background:#a855f7;border:none;color:#fff;padding:8px;border-radius:8px;cursor:pointer">💬 Chat on WhatsApp</button>
+<div class="row"><input id="name" placeholder="Name"><input id="email" placeholder="WhatsApp / Email"></div>
+<textarea id="idea" placeholder="Idea + budget"></textarea>
+<button class="send" onclick="sendWA()">Send Message →</button>
+<p id="st" style="text-align:center;margin-top:10px;color:#a855f7;font-size:12px"></p>
 </div>
 </div>
 
 <script>
-function goContact(text){
- document.getElementById('contact').scrollIntoView({behavior:'smooth'});
- document.getElementById('idea').value=text+' - ';
- document.getElementById('idea').focus();
- document.getElementById('chatWindow').classList.remove('active');
-}
-function openChat(){
- document.getElementById('chatWindow').classList.toggle('active');
-}
 function sendWA(){
- let n=document.getElementById('name').value;
- let e=document.getElementById('email').value;
- let i=document.getElementById('idea').value;
- if(!n||!e||!i){document.getElementById('status').innerText='Please fill all fields';return;}
- let msg=Hi KSR AI LABS, Name:${n}, Contact:${e}, Idea:${i};
- window.open('https://wa.me/919999999999?text='+encodeURIComponent(msg),'_blank');
- document.getElementById('status').innerText='Opening WhatsApp...';
+let n=document.getElementById('name').value;
+let e=document.getElementById('email').value;
+let i=document.getElementById('idea').value;
+if(!n||!e||!i){document.getElementById('st').innerText='Fill all fields';return;}
+let msg=Hi KSR AI LABS, Name:${n}, Contact:${e}, Idea:${i};
+window.open('https://wa.me/919999999999?text='+encodeURIComponent(msg),'_blank');
 }
 </script>
 </body>
